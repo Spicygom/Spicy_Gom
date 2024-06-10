@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: "Poetsen One", sans-serif;
+}
+
+
+/*encabezado */
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    background: rgb(247, 152, 207);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.navbar a {
+    display: block;
+    padding: 23px 20px;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*color de degradado encabezado*/
+.navbar a:hover {
+    background: rgb(250, 212, 242);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 70vh !important;
+    background: url(img/spicyfondo.png) no-repeat;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:white;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: white;
+    padding: 0 100px;
+}
+
+p2 {
+    margin-bottom: 40px;
+    font-size: 20px;
+    color:black;
+    padding: 0 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid rgb(250, 159, 74);
+    color:#fff;
+    text-decoration: none ;
+    background: rgb(253, 193, 250);
+}
+
+.btn:hover {
+    background: none;
+
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*color de redes sociales*/
+.sau {
+    padding: 100px;
+    background:url(img/spicyfondop.png) no-repeat ;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: rgb(255, 216, 243);
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: rgb(250, 116, 199);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container.box h3 {
+    font-size: 20px;
+    color: #f75ba9;
+
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about {
+    background:url(img/spicyfondo3.png) no-repeat center ;
+    padding: 80px;
+}
+
+.price {
+    background: url(img/spicyfondo.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 70px;
+}
+
+.contact {
+    padding-top: 100px;
+    background:url(img/spicyfondo3.png) no-repeat center ;
+    padding-bottom: 0;
+
+}
+
+@media (max-width: 768px) {
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 120vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    
+}
+.Atencion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Atencion {
+    height: 70vh !important;
+    background: url(img/spicyfondo.png) no-repeat;
+    background-size: cover;
+}
+
+
+
+

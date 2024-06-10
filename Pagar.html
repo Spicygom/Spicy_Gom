@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagar</title>
+    <link rel="stylesheet" href="carritoestilo.css">
+</head>
+<body>
+    <h2>Finalizar Compra</h2>
+    <form id="payment-form">
+        <div>
+            <label for="address">Dirección:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div>
+            <label>Método de Pago:</label>
+            <select id="payment-method" name="payment-method" required onchange="showPaymentOptions()">
+                <option value="">Selecciona un método</option>
+                <option value="mercado_pago">Mercado Pago</option>
+                <option value="card">Tarjeta de Crédito/Debito</option>
+                <option value="cash">Efectivo</option>
+            </select>
+        </div>
+        <div id="additional-options" style="display:none;">
+          
+        </div>
+        <div id="credit-card-info" style="display:none;">
+           
+        </div>
+        <button type="submit" id="confirm-purchase" disabled>Confirmar Compra</button>
+        
+    </form>
+
+    <script src="pagar.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket</title>
+  <style>
+    pre {
+      font-family: monospace;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <pre id="ticket"></pre>
+
+  <script>
+    // Función para formatear la fecha y hora en el formato deseado
+    function formatDate(date) {
+        return date.toLocaleDateString('es-MX', { year: 'numeric', month: '2-digit', day: '2-digit' }) + ' ' +
+               date.toLocaleTimeString('es-MX', { hour: '2-digit', minute: '2-digit' });
+    }
+
+    // Función para ajustar el formato de la descripción
+    function formatDescription(description, maxLength) {
+      let formattedDescription = '';
+      while (description.length > maxLength) {
+        let part = description.substring(0, maxLength);
+        formattedDescription += part + '\n' + ' '.repeat(10); // Indentar la continuación
+        description = description.substring(maxLength);
+      }
+      formattedDescription += description;
+      return formattedDescription;
+    }
+
+    // Función para generar el ticket
+    function generateTicket() {
+        const ticketData = JSON.parse(localStorage.getItem('ticketData'));
+        if (!ticketData) {
+          document.getElementById('ticket').textContent = 'No hay datos de ticket disponibles.';
+          return;
+        }
+
+        const { date, ticketNumber, items, paymentMethod, subtotal } = ticketData;
+        let ticketContent = 
+          `---------------------------------------------------
+                              SpicyGom
+                     Tierra Blanca, Veracruz.
+                            NIF: A12345678
+           Tel: +55 274 175 4009  Email: spicygomm@gmail.com
+            --------------------------------------------------
+            Fecha: ${formatDate(new Date(date))}
+            Ticket Nº: ${ticketNumber}
+    
+            Cant.    Descripción            Precio     Total
+            --------------------------------------------------
+        `;
+    
+        items.forEach(item => {
+            const totalItemPrice = item.price * item.quantity;
+            const formattedDescription = formatDescription(item.name, 20);
+            ticketContent += `
+              ${item.quantity}   ${formattedDescription}\n${' '.repeat(43)} $${item.price.toFixed(3)}   $${totalItemPrice.toFixed(3)}
+            `;
+        });
+    
+        const tax = subtotal * 0.10; // IVA del 10%
+        const total = subtotal + tax;
+    
+        ticketContent += `
+            --------------------------------------------------
+            Subtotal:                    $${subtotal.toFixed(2)}
+            IVA (10%):                   $${tax.toFixed(2)}
+            Descuento:                   $0.00
+            --------------------------------------------------
+            TOTAL:                       $${total.toFixed(2)}
+    
+            Pagado con: ${paymentMethod === 'card' ? 'Tarjeta' : paymentMethod === 'cash' ? 'Efectivo' : 'Mercado Pago'}
+            --------------------------------------------------
+            ¡Gracias por su compra!
+           No se hacen devoluciones depues de la compra.
+        `;
+    
+        // Mostrar el ticket en la página
+        const ticketElement = document.getElementById('ticket');
+        ticketElement.textContent = ticketContent.trim();
+    }
+    
+    // Generar y mostrar el ticket al cargar la página
+    document.addEventListener('DOMContentLoaded', generateTicket);
+  </script>
+</body>
+</html>

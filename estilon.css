@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: "Poetsen One", sans-serif;
+
+}
+.head {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    background: rgb(247, 152, 207);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.navbar {
+    display: flex;
+    margin-right: 10px;
+
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+
+.navbar a {
+    display: block;
+    padding: 23px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: rgb(245, 213, 235);
+}
+.title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: white;
+    padding: 0 100px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+grid-template-rows: (3,1fr);
+    grid-gap: 20px; 
+    padding: 100px;
+    background: rgb(241, 210, 231,0.9);
+
+   
+}
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.grid-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.Politicas{
+    background: url(img/politica1.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 70px;
+}
+.novedadesh {
+    background: url(img/fondo1.jpeg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 70px;
+}
+.novedadesm {
+    background: url(img/fondo2.jpeg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 70px;
+}
+.Enchilados{
+
+    background: url(img/productos1.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 100px;
+}
+
+.Ahogados{
+    background: url(img/productos1.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 70px;
+}
+.Primavera{
+    background: url(img/fondo1.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 70px;   
+}
+.Carrito{
+    background: #FEC9C3;
+    padding: 70px;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+grid-template-rows: (3,1fr);
+    grid-gap: 20px; 
+    padding: 100px;
+    background: rgb(255, 239, 148, 0.9);
+}
+.Tallas{
+    background: rgb(255, 255, 255);
+    padding: 60px;
+}
+.spicy{
+    background: url(img/fondo1.jpeg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 80px;   
+}
+.nuevos{
+    background: url(img/inicio2.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 80px;   
+}
+.grid-container3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+grid-template-rows: (3,1fr);
+    grid-gap: 20px; 
+    padding: 100px;
+    background: white;
+}
+.grid-container4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+grid-template-rows: (3,1fr);
+    grid-gap: 20px; 
+    padding: 100px;
+    background: rgba(91, 5, 5, 0.9);
+}
+.Colecciones {
+    background: url(img/fondo8.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 80px;   
+}
+.Personalizacion{
+    background: rgb(0, 0, 0);
+    padding: 80px;
+}
+.Personalizacion, .Colecciones, .Estampados p, p1 {
+    
+    color: white;
+}
+.Colecciones p, p1 {
+    
+    color: white;
+}
+.Colecciones h2, h3 {
+    
+    color: white;
+}
+.Personalizacion, .Colecciones, .Estampados h2, h3{
+    color: white;
+}
+.Personalizacion h2, h3{
+    color: white;
+}
+.Ediciones{
+    background: url(img/fondo2.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 80px; 
+}
+.favoritos{
+    background: url(img/inicio1.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 80px; 
+}
+.grid-container5 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+grid-template-rows: (3,1fr);
+    grid-gap: 20px; 
+    padding: 100px;
+    background: rgba(252, 129, 203, 0.9);
+   
+}
+
+.paleta{
+    background: rgb(0, 0, 0);
+    padding: 80px;
+}
+.paleta p2 {
+    
+    color: white;
+}
+.paleta h2{
+    color: white;
+}
+.Atencion{
+    background: url(img/atencion1.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 80px;   
+}
+.seguimiento{
+    background: url(img/inicio2.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 80px;   
+}
+.metodos{
+    background: url(img/inicio1.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 80px;   
+}
+.btn2{
+    border: 2px solid rgb(250, 159, 74);
+    color:#fff;
+    text-decoration: none ;
+    background: rgb(253, 193, 250);
+    display: flex;
+}
+button {
+    padding: 5px 10px;
+    background-color: rgb(245, 174, 209);
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;  
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 15px;
+    font-family: 'SUNDAY', sans-serif;
+
+}
+
+button:hover {
+    background-color: rgb(245, 174, 209);
+}
+.but {
+    display: inline-block;
+    padding: 3px 15px;
+    margin: 10px;
+    background-color:  #f9acda; 
+    color: white; 
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+    font-family: Sunday Best;
+}
+
+.but:hover {
+    background-color: #e99dca;
+}
+
