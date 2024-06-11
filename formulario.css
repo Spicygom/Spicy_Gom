@@ -1,0 +1,105 @@
+body {
+    font-family: "Super Dessert", sans-serif;
+    background: url(img/spicyfondo3.png) no-repeat center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+p {
+    font-family: Arial, sans-serif; 
+}
+
+.form-register {
+    background-color:white;
+    border-radius: 8px;
+    padding: 70px;
+    box-shadow: 0 2px 4px pink;
+    max-width: 800px;
+    width: 100%;
+}
+
+.form-register h4 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color:rgb(250, 148, 245) ;
+}
+
+.controls {
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.controls::placeholder {
+    color: #999;
+}
+
+.botons {
+    background-color:rgb(253, 193, 250);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botons:hover {
+    background-color: rgb(253, 193, 250);
+}
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Estilos para los elementos del contenedor */
+.item {
+    flex: 1 1 200px; /* Ajusta el tamaño mínimo deseado */
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Medias queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
