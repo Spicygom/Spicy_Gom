@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-family:  "Super Dessert", sans-serif;
     margin: 20px;
     
         background-image: url('img/productos1.png');
@@ -11,7 +11,8 @@ body {
 
 h1 {
     text-align: center;
-    font-family: Sunday Best;
+    font-family:  "Sunday Best";
+color:rgb(247, 187, 157) ;
 
 }
 
@@ -39,7 +40,7 @@ h1 {
 }
 
 .cart th, .cart td {
-    border: 1px solid #000;
+    border: 1px solid #fdf8f8;
     padding: 10px;
     text-align: center;
     vertical-align: middle;
@@ -93,7 +94,7 @@ form {
     max-width: 400px;
     margin: 30px auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px white;
     border-radius: 8px;
 }
 
@@ -159,3 +160,57 @@ body {
     
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Estilos para los elementos del contenedor */
+.item {
+    flex: 1 1 200px; /* Ajusta el tamaño mínimo deseado */
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Medias queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
