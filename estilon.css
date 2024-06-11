@@ -8,8 +8,11 @@
 
 body {
     text-align: center;
-    font-family: "Poetsen One", sans-serif;
+    font-family: "Super Dessert", sans-serif;
 
+}
+p {
+    font-family: Arial, sans-serif; 
 }
 .head {
 
@@ -307,4 +310,69 @@ button:hover {
 .but:hover {
     background-color: #e99dca;
 }
+.grid-item :hover{
+    transform: translateY(-10px);
+    
+}
 
+.fade-item {
+    transition: opacity 0.3s; /* Agrega una transición suave */
+}
+
+/* Efecto de desvanecimiento */
+.fade-item {
+    opacity: 1; /* Imagen visible por defecto */
+}
+
+.fade-item:hover {
+    opacity: 0.5; 
+}
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Estilos para los elementos del contenedor */
+.item {
+    flex: 1 1 200px; /* Ajusta el tamaño mínimo deseado */
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Medias queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
