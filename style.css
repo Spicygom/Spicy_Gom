@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     border: 0;
@@ -9,27 +9,13 @@
 body {
     text-align: center;
     font-family: "Super Dessert", sans-serif;
-    color: rgb(247, 187, 157);
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+ color:rgb(247, 187, 157) ;
 }
-
 p {
-    font-family: Arial, sans-serif;
-    margin-bottom: 40px;
-    font-size: 18px;
-    color: white;
-    padding: 0 100px;
+    font-family: Arial, sans-serif; 
 }
 
-p2 {
-    margin-bottom: 40px;
-    font-size: 20px;
-    color: white;
-    padding: 0 100px;
-}
-
+/*encabezado */
 .head {
     display: flex;
     align-items: center;
@@ -44,25 +30,31 @@ p2 {
 .navbar {
     display: flex;
     margin-right: 10px;
+
 }
 
 .logo {
     margin-left: 30px;
 }
 
-.logo a,
-.navbar a {
+.logo a {
     text-decoration: none;
-    color: white;
+    color:white;
     text-transform: uppercase;
     font-size: 20px;
+
 }
 
 .navbar a {
     display: block;
     padding: 23px 20px;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 
+/color de degradado encabezado/
 .navbar a:hover {
     background: rgb(250, 212, 242);
 }
@@ -71,7 +63,10 @@ p2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+}
+
+.header {
+    height: 70vh !important;
     background: url(img/spicyfondo.png) no-repeat;
     background-size: cover;
 }
@@ -81,7 +76,21 @@ p2 {
     font-size: 40px;
     font-weight: 600;
     text-transform: uppercase;
+    color:white;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
     color: white;
+    padding: 0 100px;
+}
+
+p2 {
+    margin-bottom: 40px;
+    font-size: 20px;
+    color:white;
+    padding: 0 100px;
 }
 
 .btn {
@@ -89,13 +98,14 @@ p2 {
     margin-top: 15px;
     padding: 10px 40px;
     border: 2px solid rgb(250, 159, 74);
-    color: #fff;
-    text-decoration: none;
+    color:#fff;
+    text-decoration: none ;
     background: rgb(253, 193, 250);
 }
 
 .btn:hover {
     background: none;
+
 }
 
 .btn-home {
@@ -113,10 +123,10 @@ p2 {
     justify-content: center;
     align-items: center;
 }
-
+/color de redes sociales/
 .sau {
     padding: 110px;
-    background: url(img/spicyfondop.png) no-repeat;
+    background:url(img/spicyfondop.png) no-repeat ;
 }
 
 .box-container {
@@ -134,6 +144,7 @@ p2 {
     border-radius: 1rem;
     box-shadow: 0 .3 5rem rgba(0, 0, 0, .5);
     margin: 2rem;
+
 }
 
 .box-container .box i {
@@ -148,9 +159,10 @@ p2 {
     margin: 1rem 0;
 }
 
-.box-container .box h3 {
+.box-container.box h3 {
     font-size: 20px;
     color: #f75ba9;
+
 }
 
 .box-container .box p {
@@ -159,7 +171,7 @@ p2 {
 }
 
 .about {
-    background: url(img/spicyfondo3.png) no-repeat center;
+    background:url(img/spicyfondo3.png) no-repeat center ;
     padding: 80px;
 }
 
@@ -173,17 +185,82 @@ p2 {
 
 .contact {
     padding-top: 100px;
-    background: url(img/spicyfondo3.png) no-repeat center;
+    background:url(img/spicyfondo3.png) no-repeat center ;
     padding-bottom: 0;
-}
 
+}
 .Atencion {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+}
+
+.Atencion {
+    height: 70vh !important;
     background: url(img/spicyfondo.png) no-repeat;
     background-size: cover;
+}
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Estilos para los elementos del contenedor */
+.item {
+    flex: 1 1 200px; /* Ajusta el tamaño mínimo deseado */
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.hero-content{
+    display: block;
+}
+
+/* Medias para dispositivos móviles */
+@media screen and (max-width:880px){
+    .hero-content{
+        display: block;
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
+/* prueba de las medidas */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
 }
 
 /* Estilo del scrollbar */
@@ -204,84 +281,678 @@ p2 {
     background: #555;
 }
 
-/* Medias para dispositivos móviles */
-@media screen and (max-width: 880px) {
-    .hero-content {
-        display: block;
+body {
+    ::-webkit-scrollbar {
+        width: 12px;
     }
-
-    .logo a,
-    .navbar a {
-        font-size: 16px;
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
     }
-
-    .navbar a {
-        padding: 15px 10px;
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
     }
-
-    .header {
-        height: 50vh;
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
     }
+    text-align: center;
+    font-family: "Super Dessert", sans-serif;
+    color: rgb(247, 187, 157);
+}
+p {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    font-family: Arial, sans-serif; 
+}
 
+/* Encabezado */
+.head {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    background: rgb(247, 152, 207);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    margin-left: 10px;
+}
+
+.logo a {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.navbar a {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    display: block;
+    padding: 15px 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* Color de degradado encabezado */
+.navbar a:hover {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    background: rgb(250, 212, 242);
+}
+
+.header {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh !important;
+    background: url(img/spicyfondo.png) no-repeat;
+    background-size: cover;
+}
+
+.title {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+p {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: white;
+    padding: 0 20px;
+}
+
+p2 {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: white;
+    padding: 0 20px;
+}
+
+.btn {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    border: 2px solid rgb(250, 159, 74);
+    color: #fff;
+    text-decoration: none;
+    background: rgb(253, 193, 250);
+}
+
+.btn:hover {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    background: none;
+}
+
+.btn-home {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    display: flex;
+}
+
+.btn-home a {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    margin: 0 5px;
+}
+
+.content {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Color de redes sociales */
+.sau {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    padding: 60px 20px;
+    background: url(img/spicyfondop.png) no-repeat;
+}
+
+.box-container {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    height: 10rem;
+    width: 14rem;
+    background: rgb(255, 216, 243);
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .5);
+    margin: 1rem;
+}
+
+.box-container .box i {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: rgb(250, 116, 199);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3 {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    font-size: 18px;
+    color: #f75ba9;
+}
+
+.box-container .box p {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.about {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    background: url(img/spicyfondo3.png) no-repeat center;
+    padding: 60px 20px;
+}
+
+.price {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    background: url(img/spicyfondo.png) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    padding-top: 60px;
+    background: url(img/spicyfondo3.png) no-repeat center;
+    padding-bottom: 20px;
+}
+
+/* Estilos globales */
+body {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Estilos para los elementos del contenedor */
+.item {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    flex: 1 1 150px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el encabezado */
+header {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 6px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Ajustes específicos para móviles */
+@media (max-width: 768px) {
     .title {
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-
-    p {
-        font-size: 14px;
-        padding: 0 20px;
-        margin-bottom: 20px;
-    }
-
-    p2 {
-        font-size: 16px;
-        padding: 0 20px;
-        margin-bottom: 20px;
-    }
-
-    .btn {
-        padding: 8px 20px;
-        margin-top: 10px;
-    }
-
-    .btn-home a {
-        margin: 0 5px;
-    }
-
-    .content {
-        height: 40vh;
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 6px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        margin-bottom: 10px;
+        font-size: 24px;
     }
 
     .sau {
-        padding: 60px 20px;
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 6px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        height: 90vh;
     }
 
-    .box-container .box {
-        height: 10rem;
-        width: 14rem;
-        margin: 1rem;
-    }
-
-    .box-container .box h3 {
-        font-size: 18px;
-    }
-
-    .box-container .box p {
-        font-size: 14px;
-        padding: 0 10px;
-    }
-
-    .about {
-        padding: 60px 20px;
-    }
-
-    .price {
-        padding: 50px 20px;
-    }
-
-    .contact {
-        padding-top: 60px;
-        padding-bottom: 20px;
+    .navbar {
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 6px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        display: none;
     }
 }
