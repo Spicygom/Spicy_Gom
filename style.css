@@ -334,8 +334,8 @@ footer {
     }
 
     .header {
-        height: 50vh !important;
-        padding: 10px;
+        height: 60vh !important;
+        padding: 20px;
     }
 
     .title {
@@ -354,7 +354,7 @@ footer {
     }
 
     .content {
-        height: 40vh;
+        height: 50vh;
     }
 
     .sau {
