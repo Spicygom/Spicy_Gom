@@ -1,175 +1,12 @@
-body {
-    font-family:  "Super Dessert", sans-serif;
-    margin: 20px;
-    
-        background-image: url('img/productos1.png');
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
-    
-}
-
-h1 {
-    text-align: center;
-    font-family:  "Sunday Best";
-color:rgb(247, 187, 157) ;
-
-}
-
-.product-list {
-    margin: 0 auto;
-    max-width: 600px;
-}
-
-.product, .cart table {
-    width: 100%;
-    border: 1px solid #0c0b0b;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #fec2e0;
-}
-
-.product h2 {
-    margin: 0;
-}
-
-.cart table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.cart th, .cart td {
-    border: 1px solid #fdf8f8;
-    padding: 10px;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer; 
-}
-
-
-button {
-    display: inline-block;
-    padding: 5px 10px;
-    margin: 5px;
-    background-color: #f5aed1;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #e99dca;
-}
-.but {
-    display: inline-block;
-    padding: 3px 15px;
-    margin: 10px;
-    background-color:  #f9acda; 
-    color: white; 
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px; 
-    transition: background-color 0.3s;
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-}
-
-.but:hover {
-    background-color: #e99dca;
-}
-
-/* pagar.html*/
-
-h2 {
-    text-align: center;
-    color: #f35cb9;
-    font-size: 40px;
-    font-family: Sunday Best;
-}
-
-form {
-    background-color: #fdc4d7;
-    max-width: 400px;
-    margin: 30px auto;
-    padding: 20px;
-    box-shadow: 0 0 10px white;
-    border-radius: 8px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input, select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
-}
-
-.payment-method {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.payment-method div {
-    flex-basis: 48%;
-}
-
-.address-section {
-    margin-bottom: 20px;
-}
-
-#confirm-purchase {
-    display: inline-block; 
-    padding: 10px 20px; 
-    background-color: #ef92ab;
-    color: white; 
-    text-decoration: none; 
-    border-radius: 5px; 
-    font-weight: bold; 
-    transition: background-color 0.2s;
-    }
-
-#confirm-purchase:hover {
-    background-color: #f34576;
-}
-.message {
-    text-align: center;
-    padding: 10px;
-    color: #d9534f;
-}
-body {
-    font-family: 'Times New Roman', Times, serif, sans-serif;
-    margin: 20px;
-    
-        background-image: url('img/inicio1.png');
-        background-size: cover; 
-        background-repeat: no-repeat; 
-        background-position: center; 
-    
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-}
 /* Estilos globales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('img/inicio1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Contenedor principal */
@@ -212,5 +49,59 @@ footer {
     .container {
         flex-direction: column;
         padding: 10px;
+    }
+
+    .item {
+        flex: 1 1 100%; /* Ajusta el tamaño mínimo deseado para que ocupe todo el ancho */
+    }
+
+    header, footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    button, .but {
+        width: 100%; /* Botones ocupan el 100% del ancho */
+        box-sizing: border-box;
+    }
+
+    form {
+        width: 100%; /* Formularios ocupan el 100% del ancho */
+    }
+
+    input, select {
+        width: 100%; /* Inputs y selects ocupan el 100% del ancho */
+    }
+}
+
+/* Medias queries para dispositivos más pequeños (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+
+    .item {
+        padding: 10px; /* Reducir el padding en elementos del contenedor */
+    }
+
+    button, .but {
+        padding: 10px 0; /* Ajustar padding en botones */
+    }
+
+    header, footer {
+        padding: 10px; /* Reducir padding en encabezado y pie de página */
+    }
+
+    h1, h2 {
+        font-size: 24px; /* Ajustar tamaño de fuente para encabezados */
+    }
+
+    .logo a {
+        font-size: 12px; /* Ajustar tamaño de fuente en el logo */
+        padding: 8px 15px; /* Ajustar padding en el logo */
+    }
+
+    #confirm-purchase {
+        padding: 8px 15px; /* Ajustar padding en el botón de confirmación */
     }
 }
