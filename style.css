@@ -1,5 +1,4 @@
-/* Reinicio de estilos */
-* {
+*{
     margin: 0;
     padding: 0;
     border: 0;
@@ -7,44 +6,21 @@
     vertical-align: baseline;
 }
 
-/* Estilos globales */
 body {
     text-align: center;
     font-family: "Super Dessert", sans-serif;
-    color: rgb(247, 187, 157);
-    margin: 0;
-    padding: 0;
-    ::-webkit-scrollbar {
-        width: 12px;
-    }
-    ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-    }
-    ::-webkit-scrollbar-thumb {
-        background: #888;
-        border-radius: 6px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
+ color:rgb(247, 187, 157) ;
 }
-
+body1 {
+    text-align: center;
+    font-family: "Super Dessert", sans-serif;
+ color:rgb(0, 0, 0) ;
+}
 p {
-    font-family: Arial, sans-serif;
-    color: white;
-    margin-bottom: 20px;
-    font-size: 14px;
-    padding: 0 20px;
+    font-family: Arial, sans-serif; 
 }
 
-p2 {
-    margin-bottom: 20px;
-    font-size: 16px;
-    color: white;
-    padding: 0 20px;
-}
-
-/* Encabezado */
+/*encabezado */
 .head {
     display: flex;
     align-items: center;
@@ -59,29 +35,31 @@ p2 {
 .navbar {
     display: flex;
     margin-right: 10px;
+
 }
 
 .logo {
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 .logo a {
     text-decoration: none;
-    color: white;
+    color:white;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 20px;
+
 }
 
 .navbar a {
     display: block;
-    padding: 15px 10px;
-    color: white;
+    padding: 23px 20px;
+    color:white;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 20px;
 }
 
-/* Color de degradado encabezado */
+/*color de degradado encabezado*/
 .navbar a:hover {
     background: rgb(250, 212, 242);
 }
@@ -90,33 +68,51 @@ p2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+}
+
+.header {
+    height: 70vh !important;
     background: url(img/spicyfondo.png) no-repeat;
     background-size: cover;
-    padding: 4cm 80px;
-    
 }
 
 .title {
-    margin-bottom: 20px;
-    font-size: 30px;
+    margin-bottom: 40px;
+    font-size: 40px;
     font-weight: 600;
     text-transform: uppercase;
+    color:white;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
     color: white;
+    padding: 0 100px;
+}
+
+p2 {
+    margin-bottom: 40px;
+    font-size: 20px;
+    color:white;
+    padding: 0 100px;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 10px;
-    padding: 8px 20px;
+    margin-top: 15px;
+    padding: 10px 40px;
     border: 2px solid rgb(250, 159, 74);
-    color: #fff;
-    text-decoration: none;
+    color:#fff;
+    text-decoration: none ;
     background: rgb(253, 193, 250);
+    justify-content: center;
+    align-items: center;
 }
 
 .btn:hover {
     background: none;
+
 }
 
 .btn-home {
@@ -124,21 +120,20 @@ p2 {
 }
 
 .btn-home a {
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 .content {
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-/* Color de redes sociales */
+/*color de redes sociales*/
 .sau {
-    padding: 4cm 80px;
-    background: url(img/spicyfondop.png) no-repeat;
+    padding: 120px;
+    background:url(img/spicyfondop.png) no-repeat ;
 }
 
 .box-container {
@@ -149,13 +144,14 @@ p2 {
 }
 
 .box-container .box {
-    height: 10rem;
-    width: 14rem;
+    height: 11rem;
+    width: 17rem;
     background: rgb(255, 216, 243);
     text-align: center;
     border-radius: 1rem;
-    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .5);
-    margin: 1rem;
+    box-shadow: 0 .3 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+
 }
 
 .box-container .box i {
@@ -170,19 +166,20 @@ p2 {
     margin: 1rem 0;
 }
 
-.box-container .box h3 {
-    font-size: 18px;
+.box-container.box h3 {
+    font-size: 20px;
     color: #f75ba9;
+
 }
 
 .box-container .box p {
-    padding: 0 10px;
-    font-size: 14px;
+    padding: 0 15px;
+    font-size: 16px;
 }
 
 .about {
-    background: url(img/spicyfondo3.png) no-repeat center;
-    padding: 3.5cm 20px;
+    background:url(img/spicyfondo3.png) no-repeat center ;
+    padding: 80px;
 }
 
 .price {
@@ -190,24 +187,73 @@ p2 {
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
-    padding: 4cm 80px;
+    padding: 70px;
 }
 
 .contact {
-    padding-top: 60px;
-    background: url(img/spicyfondo3.png) no-repeat center;
-    padding-bottom: 20px;
-    padding: 4cm 80px;
-}
+    padding-top: 100px;
+    background:url(img/spicyfondo3.png) no-repeat center ;
+    padding-bottom: 0;
 
+}
 .Atencion {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+}
+
+.Atencion {
+    height: 70vh !important;
     background: url(img/spicyfondo.png) no-repeat;
     background-size: cover;
-    padding: 4cm 80px;
+}
+#miBoton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: 2px solid rgb(250, 74, 156);
+    color: #fff;
+    text-decoration: none;
+    background: rgb(249, 188, 246);
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    bottom: 20px; 
+    left: 20px;
+    border-radius: 10px;
+    
+}
+
+#miBoton:hover {
+    background: none;
+}
+
+.btnn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: 2px solid rgb(250, 74, 156);
+    color: #fff;
+    text-decoration: none;
+    background: rgb(249, 188, 246);
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    bottom: 20px; 
+    border-radius: 10px;
+    left: calc(5px + 180px); 
+}
+
+.btnn:hover {
+    background: none;
+}
+
+
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Contenedor principal */
@@ -215,17 +261,18 @@ p2 {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 
+/* Estilos para los elementos del contenedor */
 .item {
-    flex: 1 1 150px;
+    flex: 1 1 200px; /* Ajusta el tamaño mínimo deseado */
     background-color: #f0f0f0;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-/* Encabezado */
+/* Estilos para el encabezado */
 header {
     background-color: #333;
     color: white;
@@ -233,7 +280,7 @@ header {
     text-align: center;
 }
 
-/* Pie de página */
+/* Estilos para el pie de página */
 footer {
     background-color: #333;
     color: white;
@@ -243,13 +290,64 @@ footer {
     width: 100%;
     bottom: 0;
 }
+/*boton para subir*/
+#scrollTopBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background: linear-gradient(45deg, #ffcccb, #ff9966, #ffff99); /* Degradado de colores */
+    color: white; /* Color de texto */
+    cursor: pointer; 
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Alto del botón */
+    border-radius: 50%; /* Bordes redondeados */
+    font-size: 24px; /* Tamaño de la flecha */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#scrollTopBtn:hover {
+    background: linear-gradient(45deg, #ffff99, #ff9966, #ffcccb); /* Degradado de colores invertido al pasar el ratón */
+}
+.hero-content{
+    display: block;
+}
 
 /* Medias para dispositivos móviles */
-@media screen and (max-width: 880px) {
-    .hero-content {
+@media screen and (max-width:880px){
+    .hero-content{
         display: block;
     }
 }
+html{
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 880px) {
+    .header {
+        height: 50vh !important;
+    }
+    .title {
+        font-size: 30px;
+    }
+    p, p2 {
+        padding: 0 10px;
+        font-size: 16px;
+    }
+    .box-container .box {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .price, .about, .contact {
+        padding: 50px 10px;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
