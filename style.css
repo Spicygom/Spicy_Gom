@@ -32,12 +32,14 @@ p {
     position: fixed;
     width: 100%;
     z-index: 100;
+    top: 0;
 }
 
 .navbar {
     display: flex;
     margin-right: 10px;
     overflow-x: auto;
+    white-space: nowrap;
 }
 
 .logo {
@@ -146,7 +148,7 @@ p2 {
     background: rgb(255, 216, 243);
     text-align: center;
     border-radius: 1rem;
-    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
     margin: 2rem;
 }
 
@@ -319,6 +321,7 @@ footer {
 @media screen and (max-width: 880px) {
     .head {
         height: 45px;
+        flex-wrap: wrap;
     }
 
     .logo {
@@ -327,7 +330,7 @@ footer {
 
     .logo a, .navbar a {
         font-size: 16px;
-        padding: 15px 10px;
+        padding: 10px 5px;
     }
 
     .header {
@@ -355,7 +358,7 @@ footer {
     }
 
     .sau {
-        padding: 200px 40px;
+        padding: 50px 20px;
     }
 
     .box-container {
@@ -369,7 +372,7 @@ footer {
     }
 
     .price, .about, .contact {
-        padding: 80px 30px;
+        padding: 40px 20px;
     }
 
     .Atencion {
@@ -377,12 +380,12 @@ footer {
     }
 
     .navbar {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        overflow-x: auto;
     }
 
     .navbar a {
-        padding: 10px;
-        font-size: 9px;
+        padding: 10px 15px;
     }
 }
 
