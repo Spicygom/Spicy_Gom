@@ -353,8 +353,8 @@ footer {
         padding: 8px 30px;
     }
 
-    .about {
-        padding: 140px 20px; /* Ajusta el padding vertical a 80px y el horizontal a 20px */
+.about {
+        padding: 180px 20px; /* Ajusta el padding vertical a 140px y el horizontal a 20px */
         background-size: cover;
     }
 
