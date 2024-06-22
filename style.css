@@ -400,17 +400,17 @@ footer {
     }
 
     .box {
-        width: calc(33.33% - 2rem); /* Ajusta el ancho de los cuadros para tres en una fila */
+        width: calc(33.33% - 1.5rem); /* Ajusta el ancho de los cuadros para tres en una fila */
         margin: 1rem; /* Margen entre los cuadros */
         text-align: center;
         background: rgb(255, 216, 243);
         border-radius: 1rem;
         box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-        padding: 1rem;
+        padding: .5rem;
     }
 
     .box i {
-        font-size: 2rem; /* Ajusta el tamaño de los íconos en dispositivos móviles */
+        font-size: 1rem; /* Ajusta el tamaño de los íconos en dispositivos móviles */
         line-height: 3rem; /* Alinea verticalmente los íconos */
         margin-bottom: 0.5rem;
     }
