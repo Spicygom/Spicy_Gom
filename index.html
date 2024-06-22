@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
      <link rel="stylesheet" href="style.css">
     <title>SpicyGom.tb</title>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -21,7 +21,7 @@
             <a href="#content header">Inicio</a>
             <a href="#content sau">Redes Sociales</a>
             <a href="#content about">Productos</a>
-            <a href="#content price">Politica de envios</a>
+            <a href="#content price">SpicyGummies</a>
             <a href="#content contact">contacto</a>
             <a href="#content Atencion">Atención al cliente</a>
        
@@ -43,42 +43,38 @@
         </div>
     </section>
 
-    <section class="content sau" id="content sau">
-
+    <section class="about">
         <h2 class="title">Redes Sociales</h2>
         <p>
-            ¡Síguenos en nuestras redes sociales para estar al tanto de las últimas noticias, promociones especiales y contenido exclusivo de Spicygom! 
             Descubre cómo transformamos lo picante en algo delicioso y divertido.
-             Únete a nuestra comunidad y comparte tus momentos Spicygom con nosotros.
-             ¡No te pierdas ni un solo detalle de nuestra pasión por las gomitas enchiladas!
-
+            Únete a nuestra comunidad y comparte tus momentos Spicygom con nosotros.
+            ¡No te pierdas ni un solo detalle de nuestra pasión por las gomitas enchiladas!
             Encuéntranos en:
         </p>
-
+    
         <div class="box-container">
             <div class="box">
-            <i class="fab fa-pinterest"></i>
-            <h3><a href= "hhttps://pin.it/mBu8zfutg"target="_blank">Pinterest</a></h3>
-            <p>¡Síguenos en Pinterest!</p>
+                <i class="fab fa-pinterest"></i>
+                <h3><a href="https://pin.it/4O8f8texN" target="_blank">Pinterest</a></h3>
+                <p>¡Síguenos en Pinterest!</p>
+            </div>
+    
+            <div class="box">
+                <i class="fab fa-instagram"></i>
+                <h3><a href="https://www.instagram.com/spicygom.tb?igsh=MTUwMHMwZHJzaHJobQ==" target="_blank">Instagram</a></h3>
+                <p>¡Descubre nuestras últimas novedades en Instagram!</p>
+            </div>
             
+            <div class="box">
+                <i class="fab fa-facebook"></i>
+                <h3><a href="https://www.facebook.com/profile.php?id=61560738593455&mibextid=ZbWKwL" target="_blank">Facebook</a></h3>
+                <p>¡Conéctate con nosotros en Facebook!</p>
+            </div>
         </div>
-
-        <div class="box">
-            <i class="fab fa-instagram"></i>
-            <h3><a href="https://www.instagram.com/coach?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="_blank">Instagram</a></h3>
-            <p>Descubre nuestras últimas novedades en Instagram</p>
-        </div>
-        
-        <div class="box">
-            <i class="fab fa-facebook"></i>
-            <h3><a href= "https://www.facebook.com/search/top/?q=Coach"target="_blank">facebook</a></h3>
-            <p>¡Conéctate con nosotros en Facebook!</p>
-        </div>
-
-    </div>
-    <p2>¡Únete a la revolución de las gomitas picantes con Spicygom!</p2>
-
-</section>
+    
+        <p class="p2">¡Únete a la revolución de las gomitas picantes con Spicygom!</p>
+    </section>
+    
 
 <section class="content about" id="content about">
 
@@ -92,26 +88,22 @@
         Nuestros productos incluyen:
         - Gomitas clásicas enchiladas
         - Gomitas picantes gourmet
-        - Ediciones especiales y más
+        - Ediciones especiales y más!!
         </p>
 
    
-        <a href="Productos.html" class="btn">Saber mas</a>
+        <a href="Productos.html" class="btn">Comprar</a>
 
     </section>
     <section class="content price" id="content price">
 
         <article class="contain">
-            <h2 class="title">Politica de envios</h2>
+            <h2 class="title">SpicyGummies</h2>
             <p>
-                Los envíos nacionales se procesan en 1-2 días hábiles tras recibir el pedido, debido a la producción diaria. 
-                Utilizamos empresas de paquetería externas con términos propios. 
-                En zonas extendidas se aplica una tarifa adicional. Para rastreo y consultas sobre envíos, 
-                contactar directamente a la paquetería. Spicygom asume responsabilidad solo por errores de dirección confirmados por la guía de envío. En caso de devolución por fallo de entrega, el cliente cubre los costos de reenvío. Entregas en Tierra Blanca se hacen en Cbtis 66,
-                 1-2 días hábiles después de la compra, después de las 5:30 pm de lunes a viernes
+                ¡Descubre como hacemos nuestra deliciosas gomitas enchiladas!
             </p>
 
-            <a href="Politicas.html" class="btn">Saber Politicas</a>
+            <a href="procedimiento.html" class="btn">SpicyGom</a>
 
 
         </article>
@@ -129,7 +121,7 @@
             
             - *Correo electrónico:* info@spicygom.com
             - *Teléfono:* +123 456 7890
-            - *Dirección:* Calle Principal, Ciudad, País
+            - *Dirección:* Tierra Blanca ,Veracruz , Mexico.
             
             ¡Esperamos escucharte pronto!
 </p>
@@ -148,6 +140,25 @@
          
         </div>
     </section>
+    <button onclick="topFunction()" id="scrollTopBtn" title="Volver arriba">↑</button>
+ 
+    <script>
+        // Obtener el botón
+        var mybutton = document.getElementById("scrollTopBtn");
+        window.onscroll = function() {scrollFunction()};
+ 
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+        }
+    </script>
    
 </body>
 </html>
