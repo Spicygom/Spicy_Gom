@@ -32,76 +32,110 @@ header {
     padding: 10px;
     text-align: center;
 }
-
-/* Estilos para el pie de página */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Medias queries para dispositivos móviles */
-@media (max-width: 768px) {
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 880px) {
     .container {
         flex-direction: column;
         padding: 10px;
     }
 
-    .item {
-        flex: 1 1 100%; /* Ajusta el tamaño mínimo deseado para que ocupe todo el ancho */
+    .logo {
+        margin-left: 10px;
     }
 
-    header, footer {
-        padding: 20px;
-        text-align: center;
+    .logo a {
+        font-size: 16px;
+        padding: 10px 5px;
+    }
+
+    .product-list {
+        padding: 10px;
+    }
+
+    .product, .cart table {
+        padding: 5px;
+        margin-bottom: 5px;
     }
 
     button, .but {
-        width: 100%; /* Botones ocupan el 100% del ancho */
+        width: 100%;
         box-sizing: border-box;
     }
 
     form {
-        width: 100%; /* Formularios ocupan el 100% del ancho */
+        width: 100%;
     }
 
     input, select {
-        width: 100%; /* Inputs y selects ocupan el 100% del ancho */
+        width: 100%;
+    }
+
+    .payment-method {
+        flex-direction: column;
+    }
+
+    .payment-method div {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    p, p2 {
+        padding: 0 10px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #confirm-purchase {
+        padding: 8px 15px;
+    }
+
+    header, footer {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .cart th, .cart td {
+        padding: 5px;
     }
 }
 
-/* Medias queries para dispositivos más pequeños (max-width: 480px) */
+/* Estilos para dispositivos más pequeños (max-width: 480px) */
 @media (max-width: 480px) {
     .container {
         padding: 5px;
     }
 
     .item {
-        padding: 10px; /* Reducir el padding en elementos del contenedor */
+        padding: 10px;
     }
 
     button, .but {
-        padding: 10px 0; /* Ajustar padding en botones */
+        padding: 5px 0;
     }
 
     header, footer {
-        padding: 10px; /* Reducir padding en encabezado y pie de página */
+        padding: 5px;
     }
 
     h1, h2 {
-        font-size: 24px; /* Ajustar tamaño de fuente para encabezados */
+        font-size: 20px;
     }
 
     .logo a {
-        font-size: 12px; /* Ajustar tamaño de fuente en el logo */
-        padding: 8px 15px; /* Ajustar padding en el logo */
+        font-size: 12px;
+        padding: 8px 10px;
     }
 
     #confirm-purchase {
-        padding: 8px 15px; /* Ajustar padding en el botón de confirmación */
+        padding: 5px 10px;
     }
 }
