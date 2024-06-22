@@ -372,7 +372,7 @@ footer {
     }
 
     .price, .about, .contact {
-        padding: 40px 20px;
+        padding: 80px 20px;
     }
 
     .Atencion {
@@ -385,7 +385,7 @@ footer {
     }
 
     .navbar a {
-        padding: 10px 15px;
+        padding: 15px 15px;
     }
 }
 
