@@ -353,8 +353,15 @@ footer {
         padding: 8px 30px;
     }
 
-    .content {
-        height: 50vh;
+    .about {
+        padding: 80px 20px; /* Ajusta el padding vertical a 80px y el horizontal a 20px */
+        background-size: cover;
+    }
+
+    .contact {
+        padding-top: 120px; /* Aumenta el padding superior a 120px */
+        padding-bottom: 40px; /* Ajusta el padding inferior a 40px */
+        background-size: cover;
     }
 
     .sau {
