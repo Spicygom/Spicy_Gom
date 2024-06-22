@@ -37,6 +37,7 @@ p {
 .navbar {
     display: flex;
     margin-right: 10px;
+    overflow-x: auto;
 }
 
 .logo {
@@ -319,11 +320,11 @@ footer {
     .head {
         height: 45px;
     }
-    
+
     .logo {
         margin-left: 10px;
     }
-    
+
     .logo a, .navbar a {
         font-size: 16px;
         padding: 15px 10px;
@@ -357,8 +358,13 @@ footer {
         padding: 50px 20px;
     }
 
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .box-container .box {
-        width: 100%;
+        width: 80%;
         margin: 1rem 0;
     }
 
@@ -369,4 +375,17 @@ footer {
     .Atencion {
         height: 50vh !important;
     }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
 }
