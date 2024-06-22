@@ -358,7 +358,7 @@ footer {
     }
 
     .sau {
-        padding: 50px 20px;
+        padding: 100px 20px;
     }
 
     .box-container {
@@ -372,7 +372,7 @@ footer {
     }
 
     .price, .about, .contact {
-        padding: 80px 20px;
+        padding: 80px 40px;
     }
 
     .Atencion {
@@ -385,7 +385,7 @@ footer {
     }
 
     .navbar a {
-        padding: 15px 15px;
+        padding: 20px 15px;
     }
 }
 
