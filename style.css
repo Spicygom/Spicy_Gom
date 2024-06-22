@@ -350,6 +350,10 @@ html{
     .price, .about, .contact, .sau {
         padding: 30px 10px;
     }
+     .sau {
+        padding: 150px;
+        background:url(img/spicyfondop.png) no-repeat ;
+    }
 }
 
 html {
